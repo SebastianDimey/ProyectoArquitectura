@@ -7,17 +7,53 @@
     <link rel="stylesheet" href="../Styles/styler.css">
 </head>
 <body>
-    <section>
-        <input type="text" name="nombres" id="nombres" placeholder="Ingrese sus nombres">
-        <input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos">
-        <label for="tipodocumento">Tipo de Documento:</label><br>
-                    <select id="tipodocumento" name="tipodocumento">
-                        <option value="CC">Cédula de Ciudadanía</option>
-                        <option value="TI">Tarjeta de Identidad</option>
-                        <option value="CE">Cédula de Extranjería</option>
-                        <!-- Agrega más opciones según sea necesario -->
-                    </select><br>
-        
+    <section class="container">
+        <header>Formulario De Registro</header>
+        <form action="#" class="formulario">
+            <div class="input-box">
+                <label>Nombre Completo</label>
+                <input type="text" placeholder="Escriba su nombre completo" required>
+            </div>
+            <div class="input-box">
+                <label>Apellidos</label>
+                <input type="text" placeholder="Escriba sus Apellidos" required>
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Correo</label>
+                    <input type="text" placeholder="Escriba su Correo" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Telefono</label>
+                    <input type="number" placeholder="Escriba su Telefono" required>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="input-box">
+                    <label>Dirrecion</label>
+                    <input type="text" placeholder="Escriba su Dirrecion" required>
+                </div>
+                
+                <div class="input-box">
+                    <label>Programa</label>
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Programa</option>
+                            <option>Ingenieria de sistemas</option>
+                            <option>Ingenieria ambiental</option>
+                            <option>Ingenieria electronica</option>
+                            <option>Ingenieria industrial</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <button>Registrar</button>
+        </form>
     </section>
 </body>
 </html>
