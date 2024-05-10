@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
 .container {
     display: flex; /* Hace que los elementos dentro del contenedor se muestren en línea */
     justify-content: center; /* Centra los elementos horizontalmente */
@@ -5,7 +12,6 @@
     height: 100%; /* Establece la altura del contenedor al 100% del viewport */
     width: 100%;
     background-color: #212121;
-    font-family: 'ITC Galliard Bold', serif;
 }
 
 .form-container {
@@ -27,11 +33,11 @@
 }
 
 form {
+    margin-top: 5%;
     background-color: #ffffff; /* Color de fondo del formulario */
     padding: 20px; /* Añade espacio alrededor del formulario */
     border-radius: 10px; /* Agrega bordes redondeados al formulario */
     color: #212121;
-    font-family: 'ITC Galliard Bold', serif;
 }
 
 form .username{
@@ -120,7 +126,7 @@ body, html{
 label{
     font-size: 30px;
 }
-h2 {
-    /* Otros estilos... */
-    font-family: 'ITC Galliard Bold', serif;
+
+h2{
+    margin-top: 5%;
 }
